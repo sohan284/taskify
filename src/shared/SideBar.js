@@ -72,7 +72,7 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+            Search
           </Typography>
         </Toolbar>
       </AppBar>

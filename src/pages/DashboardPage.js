@@ -29,19 +29,19 @@ function DashboardPage() {
       title: "Project Statistics",
       series: [115, 75, 48, 15],
       labels: ["Started", "Default", "On Going", "In Review"],
-      color: "#70d100",
+      color: ["#70d100","#00b9d1","#ebb400","#852bfa"],
     },
     {
       title: "Task Statistics",
       series: [20, 50, 38, 28],
       labels: ["Started", "Default", "On Going", "In Review"],
-      color: "#852bfa",
+      color: ["#ebb400","#852bfa","#00b9d1","#70d100"],
     },
     {
       title: "Todos Overview",
       series: [20, 50, 38, 28],
       labels: ["Apples", "Oranges", "Bananas"],
-      color: "#ebb400",
+      color: ["#00b9d1","#70d100","#ebb400","#852bfa"],
     },
   ];
   return (
@@ -64,6 +64,7 @@ function DashboardPage() {
               title={detail?.title}
               series={detail?.series}
               labels={detail?.labels}
+              colors={detail?.color}
             />
           </div>
         ))}
